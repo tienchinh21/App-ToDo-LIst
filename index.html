@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/index.css">
+    <title>List-Todo-App</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Todo-List App</h1>
+        </header>     
+            <div class="controls-sort">
+                <select name="" class="sort-values">
+                    <option value="name-desc">NAME - DESC</option>
+                    <option value="name-asc">NAME - ASC</option>
+                    <option value="level-desc">LEVEL - DESC</option>
+                    <option value="level-asc">LEVEL - ASC</option>
+                </select>
+                <div class="sort-preview">NAME - DESC</div>
+            </div>
+        <div class="inputSearch">
+           <form id="form-task" action="">
+            <div class="input">
+                <input type="text" class="input-name" placeholder="Add New Task">
+                <div class="level-control">
+                    <select name="" class="level-values input-level">
+                        <option value="1">SMALL</option>
+                        <option value="2">MEDIUM</option>
+                        <option value="3">HIGHT</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+           </form>
+            <div class="search">
+                <input type="text" name="search" placeholder="Type a text to search...!">
+            </div>
+        </div>
+        <h4>Today's Tasks</h4>
+        <div class="content-tasks">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Task</th>
+                        <th>Level</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="task-body">
+                    <tr>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>
+                        <span class="span">small</span>
+                        
+                    </td>
+                    <td>
+                        <button class="btn-delete" type="button">Delete</button>
+                        <button class="edit" type="button">edit</button>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./public/js/app.js" type="module"></script>
+</body>
+</html>
